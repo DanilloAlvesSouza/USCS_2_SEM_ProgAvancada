@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+struct cadastro {
+	char nome[10];
+	int idade;
+	char rua[10];
+	int numero;
+};
+
+void imprimeCadastro(cadastro c)
+{
+printf("Nome: %c Idade: %d Rua: %c Numero: %d \n", c.nome, c.idade, c.rua, c.numero);
+}
+
+int main(){
+	cadastro c;
+	
+	c.nome = "Danillo";
+	c.idade = 23;
+	c.rua = "rua teste";
+	c.numero = 697;
+	
+	imprimeCadastro(c);
+	
+}

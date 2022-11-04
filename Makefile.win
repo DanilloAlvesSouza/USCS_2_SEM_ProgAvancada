@@ -1,17 +1,17 @@
-# Project: unidade06prog7
+# Project: Scruct2
 # Makefile created by Dev-C++ 5.11
 
-CPP      = g++.exe -D__DEBUG__
-CC       = gcc.exe -D__DEBUG__
+CPP      = g++.exe
+CC       = gcc.exe
 WINDRES  = windres.exe
-OBJ      = "Prog\ _7.o" teste.o
-LINKOBJ  = "Prog _7.o" teste.o
-LIBS     = -L"E:/Program Files/Dev-Cpp/MinGW64/lib" -L"E:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+OBJ      = Pagina6.o
+LINKOBJ  = Pagina6.o
+LIBS     = -L"E:/Program Files/Dev-Cpp/MinGW64/lib" -L"E:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
 INCS     = -I"E:/Program Files/Dev-Cpp/MinGW64/include" -I"E:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
 CXXINCS  = -I"E:/Program Files/Dev-Cpp/MinGW64/include" -I"E:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"E:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"E:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
-BIN      = unidade06prog7.exe
-CXXFLAGS = $(CXXINCS) -g3
-CFLAGS   = $(INCS) -g3
+BIN      = Scruct2.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
 RM       = rm.exe -f
 
 .PHONY: all all-before all-after clean clean-custom
@@ -24,8 +24,5 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-"Prog\ _7.o": Prog\ _7.c
-	$(CC) -c "Prog _7.c" -o "Prog _7.o" $(CFLAGS)
-
-teste.o: teste.c
-	$(CC) -c teste.c -o teste.o $(CFLAGS)
+Pagina6.o: Pagina6.c
+	$(CC) -c Pagina6.c -o Pagina6.o $(CFLAGS)
